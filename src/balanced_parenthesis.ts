@@ -1,5 +1,6 @@
 console.log('============= Balanced Parenthesis =============');
 
+// Write a function to test whether a string has balanced parentheses.
 
 function parenthesisAreBalanced(s: string): boolean {
   let stack = [];

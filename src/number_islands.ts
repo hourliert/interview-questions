@@ -1,4 +1,7 @@
-console.log('============= Islands Counter =============');
+console.log('============= Island Counter =============');
+
+// Given a 2D-matrix M of just zeroes and ones, count the number of island. An island is a group
+// of ones or just a one by itself.
 
 
 function appendIf(queue: number[][], x: number, y: number, r: number, c: number) {
@@ -8,6 +11,7 @@ function appendIf(queue: number[][], x: number, y: number, r: number, c: number)
 }
 
 
+// This is a BFS algorithm.
 function findPartsOfIsland(matrix: number[][], i: number, j: number, r: number, c: number): void {
   const queue = [];
 
@@ -27,7 +31,7 @@ function findPartsOfIsland(matrix: number[][], i: number, j: number, r: number, 
 }
 
 
-function islandsCounter(matrix: number[][]): number {
+function islandCounter(matrix: number[][]): number {
   // null or empty matrix
   if (matrix === null || (matrix.length === 1 && matrix[0].length === 0)) {
     return 0;
@@ -65,8 +69,8 @@ const matrix5 = [[1, 1, 0, 0, 0],
                  [0, 0, 0, 0, 0],
                  [1, 0, 1, 0, 1]];
 
-console.log(matrix1, islandsCounter(matrix1));
-console.log(matrix2, islandsCounter(matrix2));
-console.log(matrix3, islandsCounter(matrix3));
-console.log(matrix4, islandsCounter(matrix4));
-console.log(matrix5, islandsCounter(matrix5));
+console.log(matrix1, islandCounter(matrix1));
+console.log(matrix2, islandCounter(matrix2));
+console.log(matrix3, islandCounter(matrix3));
+console.log(matrix4, islandCounter(matrix4));
+console.log(matrix5, islandCounter(matrix5));
