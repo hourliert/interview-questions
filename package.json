@@ -1,0 +1,14 @@
+{
+  "name": "interviews",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Hourlier <hourliert@gmail.com> (https://github.com/hourliert)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  }
+}
